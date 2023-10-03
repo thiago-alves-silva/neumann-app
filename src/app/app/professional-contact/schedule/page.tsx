@@ -25,7 +25,7 @@ const AppSchedule = () => {
   const scheduleDate = Intl.DateTimeFormat("pt-BR", {
     dateStyle: "medium",
     timeStyle: "short",
-  }).format(Date.parse(schedule.chosen_time.replace("Z", "-03:00")));
+  }).format(Date.parse(schedule.chosen_time));
 
   return (
     <>
