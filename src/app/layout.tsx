@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   icons: { apple: "/icon-512x512.png" },
   themeColor: "#4946BE",
+  viewport: {
+    userScalable: false,
+    initialScale: 1,
+    maximumScale: 1,
+    width: "device-width",
+  },
 };
 
 export default function RootLayout({
