@@ -1,0 +1,82 @@
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.label {
+  color: var(--c3);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: 2px solid var(--c2);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+  padding: 0 0.75rem;
+}
+
+.container:has(svg) svg {
+  fill: var(--c5);
+  flex-shrink: 0;
+  width: 1.5rem;
+}
+
+.container {
+  border-color: var(--c5);
+}
+
+.container:hover {
+  border-color: var(--c4);
+}
+
+.container:hover svg {
+  fill: var(--c4);
+}
+
+.container.focused {
+  border-color: var(--b2);
+  box-shadow: 0px 0px 4px 0px var(--b2);
+}
+
+.container.focused svg {
+  fill: var(--b2);
+}
+
+.input {
+  all: unset;
+  appearance: none;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  color: var(--c4);
+  font-size: 1rem;
+  height: 3rem;
+}
+
+.input::placeholder {
+  color: var(--c2);
+  transition: color 0.2s;
+}
+
+:is(.container:hover, .container.focused) .input::placeholder {
+  color: var(--c3);
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input[type="number"] {
+  appearance: textfield;
+}

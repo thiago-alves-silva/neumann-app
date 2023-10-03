@@ -1,0 +1,165 @@
+.main {
+  background-color: var(--c7);
+  min-height: 100dvh;
+}
+
+.title-container {
+  background-color: #56cce3;
+  padding: 6rem 2rem 3rem;
+}
+
+.title-container .icon {
+  display: block;
+  fill: var(--c7);
+  margin: 0 auto 0.5rem;
+  width: 2.5rem;
+}
+
+.title-container .title {
+  display: block;
+  color: var(--c7);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.label {
+  display: block;
+  color: var(--c2);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.bar-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 2rem;
+}
+
+.points,
+.percentage {
+  color: var(--c3);
+  font-size: 0.875rem;
+}
+
+.percentage {
+  justify-self: flex-end;
+}
+
+.progress {
+  accent-color: var(--p1);
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.progress::-webkit-progress-value {
+  background: var(--p1);
+}
+
+.progress::-moz-progress-bar {
+  background: var(--p1);
+}
+
+.popular-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  cursor: grab;
+  overflow: auto;
+}
+
+.popular-list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  flex: 1 0 8rem;
+  background-color: #edebff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  height: 8rem;
+}
+
+.popular-list .icon {
+  fill: var(--b3);
+  transition: transform 0.2s;
+  width: 3rem;
+}
+
+.popular-list .label {
+  color: var(--c3);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.popular-list li:hover .icon {
+  transform: scale(0.9);
+}
+
+.popular-list li:hover .label {
+  text-decoration: underline;
+}
+
+.suggested-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.suggested-list li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 1rem;
+  background-color: #edebff;
+  border-radius: 0.25rem;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.suggested-list .icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1 / 3;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.suggested-list .icon-wrapper .icon {
+  fill: var(--c4);
+  transition: transform 0.2s;
+  width: 2rem;
+}
+
+.suggested-list .label {
+  align-self: flex-end;
+  color: var(--c4);
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.suggested-list li:hover .icon {
+  transform: scale(0.9);
+}
+
+.suggested-list li:hover .label {
+  text-decoration: underline;
+}
+
+.suggested-list .reward {
+  color: var(--c4);
+  font-size: 0.875rem;
+}

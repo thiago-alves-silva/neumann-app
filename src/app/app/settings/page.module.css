@@ -1,0 +1,26 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 2rem 2rem;
+  min-height: 100dvh;
+}
+
+.title {
+  color: var(--b3);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.setting-list {
+  flex: 1;
+  list-style: none;
+  margin-bottom: 4rem;
+}
+
+.setting-list .link {
+  display: block;
+  color: var(--c0);
+  border-bottom: 1px solid var(--b0);
+  padding: 1rem 1.5rem 1rem 0.25rem;
+}

@@ -1,0 +1,16 @@
+.button {
+  all: unset;
+  display: block;
+  color: var(--c4);
+  font-weight: 700;
+  cursor: pointer;
+  margin: auto;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button.hidden {
+  display: none;
+}

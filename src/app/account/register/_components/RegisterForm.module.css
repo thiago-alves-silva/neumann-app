@@ -1,0 +1,22 @@
+.input {
+  margin: 0 auto 1rem;
+}
+
+.button {
+  margin: 2rem auto 0.5rem;
+}
+
+.registered {
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+}
+
+.link {
+  color: var(--c3);
+  font-size: 0.875rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

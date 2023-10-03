@@ -1,0 +1,31 @@
+.main {
+  background-color: var(--c7);
+  min-height: 100dvh;
+}
+
+.title-container {
+  background-color: #7c2ae8;
+  padding: 6rem 2rem 3rem;
+}
+
+.title-container .icon {
+  display: block;
+  fill: var(--c7);
+  margin: 0 auto 0.5rem;
+  width: 2.5rem;
+}
+
+.title-container .title {
+  display: block;
+  color: var(--c7);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}

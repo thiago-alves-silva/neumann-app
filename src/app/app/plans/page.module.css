@@ -1,0 +1,64 @@
+.main {
+  background-color: var(--c7);
+  min-height: 100dvh;
+}
+
+.title-container {
+  background-color: var(--y1);
+  padding: 6rem 2rem 4rem;
+}
+
+.title-container .label {
+  display: block;
+  color: var(--c2);
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.title-container .title {
+  color: var(--b3);
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.plan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  padding: 3rem 2rem;
+}
+
+.plan-list > li {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+  padding: 2rem 1.25rem;
+}
+
+.plan-list > li:hover {
+  transform: scale(1.025);
+}
+
+.plan-list .name {
+  color: var(--b3);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.plan-list .price {
+  color: var(--c4);
+  font-size: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.benefit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-left: 1.25rem;
+}
