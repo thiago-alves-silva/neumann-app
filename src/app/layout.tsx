@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Plataforma de aux\u00edlio no desenvolvimento dos filhos atrav\u00e9s de educa\u00e7\u00e3o positiva",
   manifest: "/manifest.json",
   icons: { apple: "/icon-512x512.png" },
-  themeColor: "#4946BE",
+  themeColor: "#f4f3ff",
   viewport: {
     userScalable: false,
     initialScale: 1,
