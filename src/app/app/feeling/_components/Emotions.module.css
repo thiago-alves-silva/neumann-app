@@ -1,0 +1,46 @@
+.emotion-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  gap: 1rem;
+  list-style: none;
+}
+
+.item input {
+  display: none;
+}
+
+.item .label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--b0);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 1.5rem;
+}
+
+.label .icon {
+  fill: #5b59a6;
+  width: 2.5rem;
+}
+
+.label .name {
+  color: var(--c3);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.item input:checked ~ .label {
+  background-color: var(--b3);
+}
+
+.item input:checked ~ .label .icon {
+  fill: var(--c6);
+}
+
+.item input:checked ~ .label .name {
+  color: var(--c6);
+  font-weight: 700;
+}

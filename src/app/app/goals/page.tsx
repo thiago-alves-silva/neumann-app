@@ -20,7 +20,7 @@ const AppGoals = () => {
       <main className={styles.main}>
         <div className={styles["title-container"]}>
           <GoalsIcon className={styles.icon} />
-          <span className={styles.title}>Neumann Pro</span>
+          <span className={styles.title}>Minha metas</span>
         </div>
         <div className={styles.wrapper}>
           <div className={styles["progress-container"]}>
